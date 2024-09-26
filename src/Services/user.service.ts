@@ -27,7 +27,6 @@ export class UserService {
                 .orWhere('user.first_name LIKE :search', { search: `%${search}%` })
                 .orWhere('user.last_name LIKE :search', { search: `%${search}%` })
                 .orWhere('user.gender LIKE :search', { search: `%${search}%` })
-                .orWhere('user.user_id =:id', { id: Number(search) })
         }
 
         query.orderBy('user_id', 'ASC')
