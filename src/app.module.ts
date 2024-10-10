@@ -10,7 +10,7 @@ import { UserEntity } from './Entities/UserEntity.entity';
     UserModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'db',
       port: 5432,
       username: 'postgres',
       password: '1234',
